@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="12dp">
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/night"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/night_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextView"
+        app:layout_constraintTop_toTopOf="@id/night"
+        app:layout_constraintBottom_toBottomOf="@id/night"
+        app:layout_constraintStart_toEndOf="@id/night"
+        android:layout_marginStart="12dp"
+        tools:text="NightMode: Off" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/cache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/night"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/cache_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextView"
+        app:layout_constraintTop_toTopOf="@id/cache"
+        app:layout_constraintBottom_toBottomOf="@id/cache"
+        app:layout_constraintStart_toEndOf="@id/cache"
+        android:layout_marginStart="12dp"
+        tools:text="caching: Off" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
